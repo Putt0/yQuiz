@@ -7,26 +7,26 @@ public class BukkitMain extends JavaPlugin {
     protected void loadService() {
         try {
             BukkitLoader.plugin = this;
-            System.out.print("[Quiz] -> Loading project from devroom");
+            System.out.print("[yQuiz] -> Loading project from devroom");
         } catch (Exception exception) {
-            System.err.print("[Quiz] -> Error: (" + exception + ")");
+            System.err.print("[yQuiz] -> Error: (" + exception + ")");
         }
     }
 
     protected void enableService() {
         try {
-            System.out.print("[Quiz] -> Started!");
+            System.out.print("[yQuiz] -> Started!");
         } catch (Exception exception) {
-            System.err.print("[Quiz] -> Error: (" + exception + ")");
+            System.err.print("[yQuiz] -> Error: (" + exception + ")");
         }
     }
 
     protected void disableService() {
         try {
-            System.out.print("[Quiz] -> Disabled");
+            System.out.print("[yQuiz] -> Disabled");
             BukkitLoader.plugin = null;
         } catch (Exception exception) {
-            System.out.print("[Quiz] -> Error: (" + exception + ")");
+            System.out.print("[yQuiz] -> Error: (" + exception + ")");
         }
     }
 }
